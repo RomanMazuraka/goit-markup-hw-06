@@ -45,7 +45,6 @@ common
 
 .container {
   max-width: 320px;
-  min-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -82,7 +81,7 @@ Section 1 - hero
 
 .hero {
   max-width: 320px;
-  padding: 72px 0;
+  /* padding: 72px 0; */
   background-color: #2e2f42;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -145,7 +144,6 @@ Section 1 - hero
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    padding: 112px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -176,7 +174,6 @@ Section 1 - hero
 @media screen and (min-width: 1158px) {
   .hero {
     max-width: 1440px;
-    padding: 188px 0;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -261,17 +258,18 @@ Section 2 - advantages-company
 }
 
 @media screen and (min-width: 768px) {
+  .advantages-company-container {
+    max-width: 768px;
+  }
   .advantages-company-list {
-    width: 736px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 72px;
   }
 
   .advantages-company-item {
-    display: block;
-    margin-bottom: 72px;
     width: calc((100% - 24px) / 2);
   }
 
@@ -282,15 +280,12 @@ Section 2 - advantages-company
 }
 
 @media screen and (min-width: 1158px) {
-  .advantages-company {
-    /* padding: 120px 0 120px; */
-  }
   .advantages-company-container {
-    max-width: 1440px;
+    max-width: 1158px;
   }
 
   .advantages-company-item-icon {
-    display: inherit;
+    display: flex;
   }
 
   .advantages-company-item-icon-container {
@@ -305,7 +300,6 @@ Section 2 - advantages-company
   }
 
   .advantages-company-list {
-    width: 1158px;
     display: flex;
     gap: 24px;
   }
@@ -317,6 +311,11 @@ Section 2 - advantages-company
     line-height: 1.2;
     margin-bottom: 8px;
     font-weight: 500;
+  }
+
+  .advantages-company-item-text {
+    align-self: stretch;
+    font-weight: 400;
   }
 }
 
@@ -388,6 +387,7 @@ Section 3 - team-company
   letter-spacing: 0.02em;
   text-align: center;
   margin-bottom: 8px;
+  font-weight: 400;
 }
 
 .team-company-item-link {
@@ -409,4 +409,98 @@ Section 3 - team-company
 
 .team-company-item-icon {
   fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+  .team-company-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0 auto;
+  }
+
+  .team-company-img {
+    height: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .team-company-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .team-company-container {
+    max-width: 1158px;
+  }
+
+  .team-company-list {
+    width: 1158px;
+    display: flex;
+    gap: 24px;
+  }
+  .team-company-item {
+    width: calc((100% - 24px * 3) / 4);
+  }
+
+  .team-company-img {
+    display: block;
+    width: 100%;
+  }
+}
+
+/* ========================================================================================================================================================
+Section 4 - portfolio-company
+======================================================================================================================================================== */
+.portfolio-company-list {
+  width: 288px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.overlay-text {
+  display: none;
+}
+
+.portfolio-company-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-company-title {
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 72px;
+  font-weight: 700;
+}
+
+.portfolio-company-item {
+  display: flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.portfolio-company-item-title {
+  font-weight: 500;
+  color: #2e2f42;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.portfolio-company-item-text {
+  color: #434455;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 400;
 }
