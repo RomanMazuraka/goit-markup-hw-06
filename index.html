@@ -70,12 +70,12 @@
 
       <div class="menu-header-mob">
         <div class="menu-mob">
+          <button type="button" class="menu-btn-close">
+            <svg class="menu-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
           <form class="menu-header-form">
-            <button type="button" class="menu-btn-close">
-              <svg class="menu-btn-icon" width="8" height="8">
-                <use href="./images/icons.svg#icon-close-black"></use>
-              </svg>
-            </button>
             <nav>
               <ul class="menu-mob-list">
                 <li class="mob-menu-item">
@@ -771,7 +771,7 @@
 
       <!-- Backdrop -->
 
-      <div class="backdrop is-open" data-modal>
+      <div class="backdrop" data-modal>
         <div class="modal">
           <button type="button" class="modal-btn" data-modal-close>
             <svg class="modal-btn-icon" width="8" height="8">
@@ -841,20 +841,23 @@
             <!-- checkbox -->
 
             <div class="modal-checkbox">
-              <input
-                class="checkbox-item visually-hidden"
-                type="checkbox"
-                name="user-privacy"
-                id="user-privacy"
-                value="true"
-              />
               <label for="user-privacy" class="modal-check-label">
+                <input
+                  class="checkbox-item visually-hidden"
+                  type="checkbox"
+                  name="user-privacy"
+                  id="user-privacy"
+                  value="true"
+                />
                 <span class="label-span">
                   <svg class="modal-check-icon" width="10" height="8">
-                    <use href="./images/icons.svg#icon-vector-chekbox"></use>
-                  </svg> </span
-                >I accept the terms and conditions of the
-                <a class="label-link" href="">Privacy Policy</a>
+                    <use
+                      href="./images/icons.svg#icon-vector-chekbox"
+                    ></use></svg></span
+                ><span class="label-text"
+                  >I accept the terms and conditions of the
+                  <a class="label-link" href="">Privacy Policy</a></span
+                >
               </label>
             </div>
             <button class="hero-button" type="submit">Send</button>
