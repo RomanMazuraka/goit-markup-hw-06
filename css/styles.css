@@ -42,16 +42,23 @@ address {
 /* ========================================================================================================================================================
 common
 ======================================================================================================================================================== */
-
-.container {
-  min-width: 320px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
-
 section {
   padding-top: 96px;
   padding-bottom: 96px;
+}
+@media screen and (min-width: 1158px) {
+  section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+.container {
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -62,12 +69,9 @@ section {
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1440px;
-    padding: 0 15px 0 15px;
-  }
-  section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -127,7 +131,7 @@ Header
 
 @media screen and (min-width: 768px) {
   .hader-container {
-    max-width: 768px;
+    min-width: 768px;
     max-height: 72px;
     border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
     background: var(--WHITE, #fff);
@@ -221,7 +225,7 @@ Header
 
 @media screen and (min-width: 1158px) {
   .hader-container {
-    max-width: 1440px;
+    min-width: 1158px;
     height: 72px;
     box-shadow: none;
     padding: 0;
