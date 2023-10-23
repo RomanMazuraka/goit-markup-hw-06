@@ -77,6 +77,9 @@ section {
 Header
 ======================================================================================================================================================== */
 .hader-container {
+  min-width: 320px;
+  max-height: 56px;
+  padding: 16px 16px;
   display: flex;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -104,7 +107,6 @@ Header
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  margin-right: 76px;
 }
 .hader-logo-text {
   color: #2e2f42;
@@ -116,10 +118,9 @@ Header
 }
 .menu-btn-mob {
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
   background-color: transparent;
   border: none;
+  padding: 0;
 }
 
 .menu-icon {
@@ -136,6 +137,10 @@ Header
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
       0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  }
+
+  .hader-logo {
+    margin-right: 72px;
   }
 
   .menu-btn-mob {
@@ -201,9 +206,6 @@ Header
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: 16px;
-    margin-right: 16px;
-    margin-bottom: 16px;
   }
 
   .hader-address-item-link {
