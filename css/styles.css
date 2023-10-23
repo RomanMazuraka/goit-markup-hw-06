@@ -224,8 +224,17 @@ Header
 }
 
 @media screen and (min-width: 1158px) {
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  }
+
   .hader-container {
-    max-width: 1440px;
+    min-width: 1158px;
+    height: 72px;
+    box-shadow: none;
+    padding: 0;
   }
 
   .hader-address-list {
@@ -508,7 +517,9 @@ Section 1 - hero
     flex-shrink: 0;
   }
   .hero {
-    max-width: 1158px;
+    max-width: 1440px;
+    padding: 188px 0;
+    height: 600px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
