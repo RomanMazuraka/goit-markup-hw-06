@@ -44,7 +44,7 @@ common
 ======================================================================================================================================================== */
 
 .container {
-  max-width: 320px;
+  min-width: 320px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -62,7 +62,7 @@ section {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    max-width: 1440px;
     padding: 0 15px 0 15px;
   }
   section {
@@ -965,7 +965,7 @@ Backdrop
 }
 
 .modal {
-  max-width: 320px;
+  min-width: 320px;
   min-height: 623px;
   background-color: #fcfcfc;
   border-radius: 4px;
