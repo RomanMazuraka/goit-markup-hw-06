@@ -94,6 +94,7 @@ Header
 }
 
 .hader-navigation {
+  width: 320px;
   display: flex;
   align-items: center;
   margin-right: auto;
@@ -119,7 +120,7 @@ Header
   display: block;
   background-color: transparent;
   border: none;
-  margin-left: auto;
+  padding: 0;
 }
 
 .menu-icon {
