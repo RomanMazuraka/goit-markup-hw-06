@@ -119,7 +119,7 @@ Header
   display: block;
   background-color: transparent;
   border: none;
-  padding: 0;
+  margin-left: auto;
 }
 
 .menu-icon {
