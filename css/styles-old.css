@@ -116,7 +116,6 @@
 
 .footer {
   display: block;
-  background-color: #2e2f42;
   padding: 100px 0;
 }
 
@@ -137,75 +136,13 @@
   margin-left: 0;
 }
 
-.footer-link {
-  display: inline-block;
-  color: #4d5ae5;
-  font-size: 18px;
-  font-family: "Raleway", sans-serif;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  height: 24px;
-  align-items: center;
-  margin-bottom: 16px;
-}
-
-.footer-link-text {
-  color: #f4f4fd;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-text {
-  color: #f4f4fd;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  width: 264px;
-}
-
 .footer-social-media {
 }
 
 .footer-social-media-title {
-  font-size: 16px;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #fff;
-  margin-bottom: 16px;
-  font-weight: 500;
 }
 
 .footer-social-media-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
-.footer-social-media-item {
-  width: 40px;
-  height: 40px;
-}
-.footer-item-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-item-icon {
-  fill: #f4f4fd;
-}
-
-.footer-item-link:hover,
-.footer-item-link:focus {
-  background-color: #31d0aa;
 }
 
 /* Footer-form */
@@ -214,66 +151,19 @@
   margin-left: auto;
 }
 
-.footer-title-form {
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  color: #fff;
-  margin-bottom: 16px;
-}
-
 .footer-form {
   display: flex;
   gap: 24px;
 }
 
 .footer-input {
-  font-size: 12px;
-  line-height: 1.5;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  width: 264px;
-  height: 40px;
-  color: #fff;
-  flex-shrink: 0;
-  padding: 8px 16px;
-  border-radius: 4px;
-  background-color: transparent;
   border: 1px solid #fff;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
-
 .footer-input::placeholder {
   color: #fff;
 }
 
 .footer-button-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.64px;
-  color: #fff;
-  padding: 8px 24px;
-  background-color: #4d5ae5;
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
-  min-width: 165px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-button-form:hover,
-.footer-button-form:focus {
-  background-color: #404bbf;
-}
-
-.icon-btn-form {
-  fill: #fff;
-  margin-left: 16px;
 }
 
 /* -----------------Backdrop---------------- */

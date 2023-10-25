@@ -782,10 +782,6 @@ Section 3 - team-company
 }
 
 @media screen and (min-width: 1158px) {
-  .team-company-container {
-    max-width: 1158px;
-  }
-
   .team-company-list {
     width: 1158px;
     display: flex;
@@ -834,7 +830,7 @@ Section 4 - portfolio-company
 }
 
 .portfolio-company-item {
-  max-width: 288px;
+  width: 288px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -924,7 +920,7 @@ Section 4 - portfolio-company
 
 @media screen and (min-width: 1158px) {
   .company-portfolio {
-    max-width: 1440px;
+    max-width: 1158px;
   }
 
   .portfolio-company-title {
@@ -980,7 +976,6 @@ Footer
 .footer-container-items {
   display: block;
   align-items: baseline;
-  width: 320px;
   height: 664px;
   flex-shrink: 0;
   padding: 96px 16px;
@@ -1105,7 +1100,7 @@ Footer
   padding: 8px 16px;
   border-radius: 4px;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #8e8f99;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   margin-bottom: 16px;
 }
@@ -1140,6 +1135,118 @@ Footer
 .icon-btn-form {
   fill: #fff;
   margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    max-width: 768px;
+    height: 456px;
+    flex-shrink: 0;
+  }
+  .footer-container-items {
+    padding-left: 108px;
+    padding-right: 164px;
+  }
+
+  .footer-conteiner-tab {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-container-form {
+    text-align: start;
+  }
+  .footer-input {
+    margin-right: 24px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    min-width: 1440px;
+    height: 312px;
+    display: flex;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-right: 159px;
+    padding-left: 156px;
+  }
+
+  .footer-conteiner-tab {
+    gap: 0;
+    align-content: baseline;
+  }
+
+  .footer-text {
+    margin-bottom: 0;
+  }
+
+  .footer-container-items {
+    padding: 0;
+    max-width: 1158px;
+    display: flex;
+    align-items: baseline;
+    flex-shrink: 0;
+    box-sizing: border-box;
+  }
+
+  .footer-container {
+    text-align: left;
+    display: block;
+    max-width: 264px;
+    margin-right: 120px;
+  }
+
+  .footer-social-media {
+    margin-right: 80px;
+  }
+
+  .footer-social-media-title {
+    text-align: left;
+  }
+
+  .footer-social-media-list {
+    margin-bottom: 0;
+  }
+
+  /* Footer-form */
+
+  .footer-container-form {
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-input {
+    border: 1px solid #fff;
+    height: 40px;
+    width: 264px;
+  }
+  .footer-input::placeholder {
+    color: #fff;
+  }
+
+  .footer-button-form {
+    width: 165px;
+    height: 40px;
+    display: flex;
+    font-family: inherit;
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer-button-form:hover,
+  .footer-button-form:focus {
+    background-color: #404bbf;
+  }
+
+  .icon-btn-form {
+    fill: #fff;
+    margin-left: 16px;
+  }
 }
 /* ========================================================================================================================================================
 Backdrop
