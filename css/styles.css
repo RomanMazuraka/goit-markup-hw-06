@@ -782,8 +782,11 @@ Section 3 - team-company
 }
 
 @media screen and (min-width: 1158px) {
+  .team-company-container {
+    max-width: 1158px;
+  }
+
   .team-company-list {
-    width: 1158px;
     display: flex;
     gap: 24px;
   }
@@ -933,7 +936,7 @@ Section 4 - portfolio-company
   }
 
   .portfolio-company-list {
-    width: 1158px;
+    width: 1128px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
